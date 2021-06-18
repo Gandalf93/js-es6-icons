@@ -4,8 +4,22 @@
     box-sizing: border-box;
 }
 
+#strisciablu{
+    
+    height: 50px;
+   
+}
+
+
+
 .col{
     background-color: aqua;
-    height: 100px;
+    height: 80px;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+  
