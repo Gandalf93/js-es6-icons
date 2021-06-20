@@ -1,25 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 
-#strisciablu{
-    
-    height: 50px;
-   
-}
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
 
-
-
-.col{
-    background-color: aqua;
-    height: 80px;
-    margin: 10px;
+.icons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: calc(100% - 140px);
+    overflow-y: scroll;
+    font-size: 200%;
+    background-color: rgb(221, 221, 221);
+  }
+  .icons > div {
+    flex-basis: calc(100% / 6 - 20px );
+    min-width: 150px;
+    margin: 20px;
+    padding: 20px;
+    background: rgb(245, 245, 245);
+    border-radius: 10px;
+    text-align: center;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0, 0.5));
+  }
+  .icons .title {
+    font-size: 14px;
+  }
+
+
+
+
 
 
   
