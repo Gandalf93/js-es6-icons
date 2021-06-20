@@ -121,7 +121,7 @@ console.log(arrayColorato);
    }
  });
  console.log(types);
-
+// LA SELECT PRENDE UNA SOLA OPZIONE, NON SO PERCHé
 
 // funzioni
    function print(array){
