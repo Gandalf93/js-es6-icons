@@ -103,24 +103,25 @@ const icons = [
 
    
 
-const arrayColorato = icons.map((element) => {
-
-  let color = 'pink';
-
-  if(element.type == 'animal'){
-    color = 'blue';
-  }else if(element.type == 'vegetable'){
-    color = 'green';
-  }
-  return{
-    ...element,
-    color
-  } 
-});
+const arrayColorato = colorIcons(icons);
 
 print(arrayColorato);
 
 console.log(arrayColorato);
+
+ const types = [];
+
+ arrayColorato.forEach((element) => {
+   if(!types.includes(element.type)){
+     types.push(element.type);
+     document.getElementById('type').innerHTML = 
+     `
+     <option value="${element.type}">${element.type}</option>
+     `
+   }
+ });
+ console.log(types);
+
 
 // funzioni
    function print(array){
@@ -141,4 +142,22 @@ console.log(arrayColorato);
     
     });
   
+    }
+
+    function colorIcons(array){
+      const arrayColorato = array.map((element) => {
+
+        let color = 'pink';
+      
+        if(element.type == 'animal'){
+          color = 'blue';
+        }else if(element.type == 'vegetable'){
+          color = 'green';
+        }
+        return{
+          ...element,
+          color
+        } 
+      });
+     return arrayColorato;
     }
